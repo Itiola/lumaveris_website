@@ -1,0 +1,8 @@
+.service-card,
+.blog-card,
+.insights-card {
+  background: var(--white);
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  transition: transform 0.25s ease;
+}

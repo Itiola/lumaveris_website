@@ -13,7 +13,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
 
   <!-- Styles -->
-  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <link rel="stylesheet" href="css/main.css" />
 
   <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
@@ -22,34 +22,30 @@
 
 <!-- Header -->
 <header>
-  <div class="container nav-bar">
-    <!-- Hamburger: extreme left -->
-    <button class="hamburger" id="hamburger" aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle navigation">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-
     <!-- Logo SVG -->
     <a href="index.html" class="logo" aria-label="Lumaveris Home">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200" width="200" height="70" aria-hidden="true">
           <text x="0" y="150" font-family="Montserrat, sans-serif" font-size="100" fill="#008080">Luma</text>
           <text x="250" y="150" font-family="Montserrat, sans-serif" font-size="100" fill="#4F4F4F">veris</text>
-          <circle cx="580" cy="80" r="10" fill="#4F4F4F"/>
+          <!-- <circle cx="580" cy="80" r="10" fill="#4F4F4F"/> -->
         </svg>
     </a>
 
     <!-- Navigation -->
-    <nav aria-label="Main Navigation">
-      <ul class="nav-links" id="mobile-menu" role="menu">
-        <li role="none"><a role="menuitem" href="#hero">Home</a></li>
-        <li role="none"><a role="menuitem" href="about-us.html">About</a></li>
-        <li role="none"><a role="menuitem" href="#services">Services</a></li>
-        <li role="none"><a role="menuitem" href="insights.html">Insights</a></li>
-        <li role="none"><a role="menuitem" href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
+  <button class="menu-toggle" id="menuToggle">
+  <span class="bar"></span>
+  <span class="bar"></span>
+  <span class="bar"></span>
+</button>
+
+<nav class="full-screen-menu" id="navMenu">
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
 </header>
 
 <!-- overlay must be present in DOM -->
@@ -195,7 +191,6 @@
         <h4>Company</h4>
         <ul>
           <li><a href="about-us.html">About Us</a></li>
-          <li><a href="#">Careers</a></li>
           <li><a href="insights.html">Insights</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>

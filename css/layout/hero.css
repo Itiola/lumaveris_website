@@ -1,0 +1,14 @@
+#hero {
+  margin-top: var(--header-height);
+  min-height: 420px;
+  background: url('images/home.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  color: var(--white);
+}
+
+.hero-content {
+  text-align: center;
+  max-width: 900px;
+  margin: auto;
+}

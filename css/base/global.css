@@ -1,0 +1,22 @@
+.container {
+  width: 92%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+section {
+  padding: 3.4rem 0;
+}
+
+.section-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#about,
+#services,
+#blog,
+#contact {
+  scroll-margin-top: calc(var(--header-height) + 10px);
+}

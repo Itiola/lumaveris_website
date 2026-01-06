@@ -1,0 +1,89 @@
+/* =========================
+   Home Hero
+   ========================= */
+#hero {
+  margin-top: var(--header-height);
+  min-height: 420px;
+  background: url('../images/home.jpg') center/cover no-repeat;
+  position: relative;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+}
+
+#hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0,0,0,0.35),
+    rgba(0,0,0,0.45)
+  );
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 6rem 0;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.hero-content h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.6rem;
+  margin-bottom: 0.8rem;
+  color: var(--white);
+}
+
+.hero-content p {
+  font-size: 1.05rem;
+  margin-bottom: 1.2rem;
+  color: rgba(255,255,255,0.92);
+}
+
+/* =========================
+   Services Section
+   ========================= */
+.services { background: var(--light-grey); }
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 1.6rem;
+  margin-top: 1.2rem;
+}
+.service-card {
+  background: var(--white);
+  padding: 1.6rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  transition: transform 0.25s ease;
+}
+.service-card:hover { transform: translateY(-6px); }
+.service-card h3 { margin-bottom: 0.6rem; color: var(--grey); }
+
+/* =========================
+   Blog Preview (Home)
+   ========================= */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+  gap: 1.6rem;
+  margin-top: 1.2rem;
+}
+.blog-card {
+  background: var(--white);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.06);
+  transition: transform 0.25s ease;
+}
+.blog-card:hover { transform: translateY(-6px); }
+.blog-card img { display: block; width: 100%; height: 180px; object-fit: cover; }
+.blog-content { padding: 1rem 1.2rem; }
+.blog-content h3 { margin-bottom: 0.45rem; color: var(--teal); }
+.blog-content p { margin-bottom: 0.8rem; color: var(--grey); }
+.blog-content a { color: var(--teal); text-decoration: none; font-weight: 600; }
+

@@ -1,0 +1,86 @@
+nav .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.6rem;
+}
+
+nav .nav-links a {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--grey);
+}
+
+@media (max-width: 991px) {
+  nav .nav-links {
+    position: fixed;
+    left: -280px;
+    width: 280px;
+    height: 100vh;
+    background: var(--teal);
+    flex-direction: column;
+  }
+
+  nav .nav-links.active {
+    left: 0;
+  }
+}
+
+
+/* Position the button top-left */
+.menu-toggle {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+/* The three bars of the hamburger */
+.bar {
+  display: block;
+  width: 30px;
+  height: 4px;
+  margin: 5px auto;
+  background-color: #333;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Full-screen overlay hidden by default */
+.full-screen-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease;
+  z-index: 999;
+}
+
+/* When the menu is active */
+.full-screen-menu.is-active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Animation to turn Hamburger into X */
+.menu-toggle.is-active .bar:nth-child(2) {
+  opacity: 0; /* Hide middle bar */
+}
+
+.menu-toggle.is-active .bar:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.menu-toggle.is-active .bar:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+
