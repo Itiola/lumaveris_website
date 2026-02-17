@@ -155,7 +155,19 @@
     </div>
 
     <!-- Contact Form -->
-    <form id="contact-form" class="contact-form">
+    <form id="contact-form" class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+      
+      <!-- Required Web3Forms Access Key -->
+      <input type="hidden" name="access_key" value="a4ceef3b-1b5a-4ab7-a5ec-034ba2ee4c72">
+
+      <!-- Optional Email Subject -->
+      <input type="hidden" name="subject" value="New Contact Message - Lumaveris Website">
+
+      <!-- Honeypot Anti-Spam -->
+      <input type="checkbox" name="botcheck" style="display:none;">
+
+      <input type="hidden" name="replyto" value="email">
+
       <div class="form-group">
         <input type="text" id="name" name="name" required placeholder=" ">
         <label for="name">Full Name</label>
