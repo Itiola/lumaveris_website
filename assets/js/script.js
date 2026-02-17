@@ -123,3 +123,4 @@ document.getElementById("contact-form").addEventListener("submit", async functio
         messageEl.className = "form-message"; // reset
     }, 5000);
 });
+

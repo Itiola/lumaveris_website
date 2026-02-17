@@ -32,29 +32,6 @@ body {
   margin: 0 auto;
 }
 
-/* --------------------------
-   Header
-   -------------------------- */
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: var(--header-height);
-  background: var(--white); /* Light background */
-  z-index: 1200;
-  display: flex;
-  align-items: center;
-  box-shadow: 0 2px 14px rgba(0,0,0,0.08);
-}
-
-.nav-bar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-}
-
 /* Logo text colors */
 .logo text:first-child {
   fill: var(--teal); 
@@ -64,73 +41,6 @@ header {
   fill: var(--grey); 
 }
 
-/* Nav links (desktop) */
-nav .nav-links {
-  list-style: none;
-  display: flex;
-  gap: 1.6rem;
-  align-items: center;
-}
-
-nav .nav-links a {
-  color: var(--grey); /* Dark grey on light background */
-  text-decoration: none;
-  font-weight: 600;
-  padding: 0.35rem 0.45rem;
-  transition: color 0.3s ease;
-}
-nav .nav-links a:hover { color: var(--teal); }
-
-/* --------------------------
-   Hamburger (always visible)
-   -------------------------- */
-/* Hamburger button */
-.hamburger {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 28px;
-  height: 20px;
-  cursor: pointer;
-  border: none;
-  background: none;
-  z-index: 1200;
-}
-
-.hamburger span {
-  display: block;
-  height: 3px;
-  width: 100%;
-  background: var(--grey);
-  border-radius: 2px;
-  transition: 0.3s;
-}
-
-/* Overlay */
-.menu-overlay {
-  display: none;
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.4);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  z-index: 1000;
-}
-
-.menu-overlay.active {
-  display: block;
-  opacity: 1;
-}
-/* Overlay */
-.menu-overlay {
-  display: none;
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.45);
-  z-index: 1150;
-  opacity: 0;
-  transition: opacity 0.25s ease;
-}
 
 /* Hero */
 #hero {
@@ -434,94 +344,6 @@ h2 { font-family: 'Playfair Display', serif; font-size: 1.6rem; color: var(--tea
   box-shadow: 0 6px 18px rgba(0, 128, 128, 0.3);
 }
 
-/* Base: mobile-first (sidebar only) */
-nav .nav-links {
-  position: fixed;
-  top: 0;
-  left: -280px; /* hidden off-screen */
-  width: 280px;
-  height: 100vh;
-  background: var(--teal);
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  padding: 4rem 2rem;
-  box-shadow: 2px 0 10px rgba(0,0,0,0.1);
-  transition: left 0.3s ease;
-  z-index: 1100;
-}
-
-nav .nav-links.active {
-  left: 0; /* slide in */
-}
-
-nav .nav-links a {
-  color: var(--white);
-  font-size: 1.1rem;
-}
-
-/* Desktop nav adjustments */
-/* Desktop & larger screens */
-/* Desktop hybrid mode */
-@media (min-width: 992px) {
-  /* Inline links visible */
-  nav .nav-links {
-    position: static;
-    flex-direction: row;
-    height: auto;
-    width: auto;
-    background: transparent;
-    box-shadow: none;
-    padding: 0;
-    gap: 2rem;
-  }
-
-nav .nav-links a {
-    color: var(--grey);
-    font-size: 1rem;
-  }
-
-  /* Sidebar still works when hamburger clicked */
-  nav .nav-links.active {
-    position: fixed;
-    top: 0;
-    left: 0;
-    flex-direction: column;
-    height: 100vh;
-    width: 280px;
-    background: var(--teal);
-    padding: 4rem 2rem;
-    box-shadow: 2px 0 10px rgba(0,0,0,0.1);
-  }
-
-  .menu-overlay {
-    display: none; /* optional, you can enable if you want overlay on desktop too */
-  }
-
-  .hamburger {
-    display: flex; /* always visible */
-  }
-
-  .nav-links a {
-    color: var(--grey);
-    font-weight: 600;
-  }
-}
-
-  /* Hamburger -> X animation */
-  .hamburger.toggle span:nth-child(1) { transform: rotate(45deg) translate(6px, 6px); }
-  .hamburger.toggle span:nth-child(2) { opacity: 0; transform: translateX(-6px); }
-  .hamburger.toggle span:nth-child(3) { transform: rotate(-45deg) translate(6px, -6px); }
-
-  .menu-overlay.active { display: block; opacity: 1; }
-
-  .hero-content { padding: 4.5rem 0; }
-
-
-/* Scroll offset for fixed header */
-#about, #services, #blog, #contact {
-  scroll-margin-top: calc(var(--header-height) + 10px);
-}
 
 /* FOOTER - matches header style */
 footer {

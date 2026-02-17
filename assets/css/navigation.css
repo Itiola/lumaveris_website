@@ -1,0 +1,111 @@
+:root {
+    --teal: #008080;
+    --dark-grey: #4F4F4F;
+    --white: #ffffff;
+}
+
+/* 1. Header Layout */
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px; /* Fixed height makes it feel stable */
+    z-index: 2000;
+    padding: 0; /* Let flexbox handle the spacing */
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.95); /* Slight transparency */
+    backdrop-filter: blur(5px); /* Blurs content behind the header */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Adds a subtle shadow for depth */
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px; /* Or whatever your container width is */
+    margin: 0 auto;
+    padding: 0 5%;
+    position: relative;
+}
+
+/* 2. Centered Logo & Hiding Logic */
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: opacity 0.3s ease;
+    z-index: 2001;
+}
+
+/* Hide logo when hamburger is active */
+.hamburger.is-active + .logo {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* 3. Hamburger / X Icon */
+.hamburger {
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 2100;
+    padding: 10px;
+}
+
+.hamburger span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: var(--teal);
+    margin: 6px 0;
+    transition: 0.3s;
+}
+
+/* Animation to X */
+.hamburger.is-active span:nth-child(1) { transform: translateY(9px) rotate(45deg); background: var(--dark-grey); }
+.hamburger.is-active span:nth-child(2) { opacity: 0; }
+.hamburger.is-active span:nth-child(3) { transform: translateY(-9px) rotate(-45deg); background: var(--dark-grey); }
+
+/* 4. Full Screen Overlay */
+.full-screen-menu {
+    position: fixed;
+    top: 0;
+    left: -100%; /* Hidden off-screen */
+    width: 100vw;
+    height: 100vh;
+    background: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1500;
+    transition: left 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.full-screen-menu.is-active {
+    left: 0;
+}
+
+/* 5. Menu Links */
+.nav-links {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.nav-links li { margin: 25px 0; }
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 2.5rem;
+    color: var(--dark-grey);
+    font-weight: 700;
+}
+
+/* Ensure the Hero section doesn't hide behind the header */
+#hero {
+    margin-top: 0; /* Reset this */
+    padding-top: 80px; /* Matches the header height so text isn't cut off */
+}
