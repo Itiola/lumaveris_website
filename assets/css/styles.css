@@ -136,7 +136,7 @@ nav .nav-links a:hover { color: var(--teal); }
 #hero {
   margin-top: var(--header-height);
   min-height: 420px;
-  background: url('images/home.jpg') center/cover no-repeat;
+  background: url('../images/home.jpg') center/cover no-repeat;
   position: relative;
   color: var(--white);
   display: flex;
