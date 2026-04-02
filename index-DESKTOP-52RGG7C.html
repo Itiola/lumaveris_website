@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Lumaveris offers strategic consulting, IT governance, and data analytics to help businesses grow and thrive." />
+  <title>Lumaveris</title>
+
+  <!-- Logo -->
+ <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.ico">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <div class="container nav-bar">
+    <!-- Hamburger: extreme left -->
+    <button class="hamburger" id="hamburger" aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- Logo SVG -->
+    <a href="index.html" class="logo" aria-label="Lumaveris Home">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200" width="200" height="70" aria-hidden="true">
+          <text x="0" y="150" font-family="Montserrat, sans-serif" font-size="100" fill="#008080">Luma</text>
+          <text x="250" y="150" font-family="Montserrat, sans-serif" font-size="100" fill="#4F4F4F">veris</text>
+          <circle cx="580" cy="80" r="10" fill="#4F4F4F"/>
+        </svg>
+    </a>
+
+    <!-- Navigation -->
+    <nav aria-label="Main Navigation">
+      <ul class="nav-links" id="mobile-menu" role="menu">
+        <li role="none"><a role="menuitem" href="#hero">Home</a></li>
+        <li role="none"><a role="menuitem" href="about-us.html">About</a></li>
+        <li role="none"><a role="menuitem" href="#services">Services</a></li>
+        <li role="none"><a role="menuitem" href="insights.html">Insights</a></li>
+        <li role="none"><a role="menuitem" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- overlay must be present in DOM -->
+<div class="menu-overlay" id="menuOverlay" tabindex="-1" aria-hidden="true"></div>
+
+  <!-- Hero -->
+  <section id="hero">
+    <div class="container hero-content">
+      <h1>Technology Consulting That Transforms Your Business</h1>
+      <p>A technology consulting firm with multi-capabilities offering across several industries.</p>
+      <a class="cta-btn" href="#contact">Schedule a Consultation</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="container">
+    <div class="section-inner">
+      <h2>About Us</h2>
+      <p>At Lumaveris, we have an unparalleled obsession for problem solving. Our consulting services and solutions is to the end of seeing that smile on the face of our clients - the smile of a problem solved. The value of our engagements are measured in the hours we saved, cost we reduced, money we made and value we created for our clients.</p>
+    </div>
+  </section>
+
+  <!-- Services -->
+ <section id="services" class="services">
+    <div class="container">
+        <h2>Our Services</h2>
+        <div class="service-grid">
+            <div class="service-card">
+                <h3>Data & Analytics</h3>
+                <p>We help leadership teams leverage data for informed decision-making.</p>
+            </div>
+            <div class="service-card">
+                <h3>Artificial Intelligence</h3>
+                <p>Unlocking the potential of AI to drive productivity, innovation and efficiency.</p>
+            </div>
+            <div class="service-card">
+                <h3>Web, Mobile & Desktop Development</h3>
+                <p>Turning your ideas into reality with user-centric design and agile development.</p>
+            </div>
+            <div class="service-card">
+                <h3>Digital Transformation Strategy</h3>
+                <p>We help leadership teams define winning technology strategies and sustainable growth models.</p>
+            </div>
+            <div class="service-card">
+                <h3>Software Asset Management</h3>
+                <p>We help leadership teams navigate the complexities of software licensing and deployment.</p>
+            </div>
+            <div class="service-card">
+                <h3>Cloud</h3>
+                <p>We help leadership teams leverage cloud technologies for scalability and innovation.</p>
+            </div>
+            <div class="service-card">
+                <h3>Messaging, Collaboration & Productivity</h3>
+                <p>We help leadership teams enhance communication, collaboration and Productivity across the organization.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <!-- Blog -->
+  <section id="blog" class="blog">
+    <div class="container">
+      <h2>Insights & Articles</h2>
+      <div class="blog-grid">
+        <article class="blog-card">
+          <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1200&auto=format&fit=crop" alt="Strategy illustration showing future-proof business planning" loading="lazy">
+          <div class="blog-content">
+            <h3>5 Strategies to Future-Proof Your Business</h3>
+            <p>Practical steps to stay ahead in a rapidly changing landscape.</p>
+            <a href="#">Read More →</a>
+          </div>
+        </article>
+        <article class="blog-card">
+          <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1200&auto=format&fit=crop" alt="Data visualization strategy graphic" loading="lazy">
+          <div class="blog-content">
+            <h3>The Role of Data in Strategic Consulting</h3>
+            <p>How analytic rigor reshapes high-stakes decisions.</p>
+            <a href="#">Read More →</a>
+          </div>
+        </article>
+        <article class="blog-card">
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop" alt="IT governance conceptual graphic" loading="lazy">
+          <div class="blog-content">
+            <h3>IT Governance: A CEO's Quick Guide</h3>
+            <p>Concise guidance for leaders on technology accountability and value.</p>
+            <a href="#">Read More →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+  <div class="contact-container">
+    <div class="contact-info">
+      <h2>Let’s Talk</h2>
+      <p>We’re here to help you achieve measurable impact. Fill out the form and our team will reach out promptly.</p>
+      <ul class="contact-details">
+        <li><i class="fas fa-envelope"></i> info@lumaveris.com</li>
+        <li><i class="fas fa-phone"></i> +234 (0) 800 123 4567</li>
+        <li><i class="fas fa-map-marker-alt"></i> Lagos, Nigeria</li>
+      </ul>
+    </div>
+
+    <!-- Contact Form -->
+    <form id="contact-form" class="contact-form">
+      <div class="form-group">
+        <input type="text" id="name" name="name" required placeholder=" ">
+        <label for="name">Full Name</label>
+      </div>
+      <div class="form-group">
+        <input type="email" id="email" name="email" required placeholder=" ">
+        <label for="email">Email Address</label>
+      </div>
+      <div class="form-group">
+        <textarea id="message" name="message" required placeholder=" "></textarea>
+        <label for="message">Your Message</label>
+      </div>
+      <button type="submit" class="submit-btn">Send Message</button>
+      <p id="form-message" class="form-message"></p>
+
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div>
+        <div class="footer-logo">Lumaveris</div>
+        <p class="footer-description">
+          We deliver actionable strategies, world-class expertise, and data-driven solutions to help you thrive in a rapidly changing market.
+        </p>
+        <div class="footer-social">
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-section footer-links">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="insights.html">Insights</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section footer-links">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Data & Analytics</a></li>
+          <li><a href="#services">Artificial Intelligence</a></li>
+          <li><a href="#services">Web & Mobile Development</a></li>
+          <li><a href="#services">Strategy & Digital Transformation</a></li>
+          <li><a href="#services">Software Licensing & Deployment</a></li>
+          <li><a href="#services">Cloud</a></li>
+          <li><a href="#services">Messaging & Collaboration</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section footer-links">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="insights.html">Insights</a></li>
+          <li><a href="#">Case Studies</a></li>
+          <li><a href="#">E-books</a></li>
+          <li><a href="#">Webinars</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2025 Lumaveris. All Rights Reserved.
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>

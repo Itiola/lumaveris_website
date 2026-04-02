@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Insights | Lumaveris</title>
+  <link rel="stylesheet" href="assets\css\styles.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+<header>
+  <div class="container nav-bar">
+    <!-- Hamburger: extreme left -->
+    <button class="hamburger" id="hamburger" aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- Logo (inline SVG restored) -->
+    <a href="index.html" class="logo" aria-label="Lumaveris Home">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200" width="200" height="70" aria-hidden="true">
+          <text x="0" y="150" font-family="Montserrat, sans-serif" font-size="100" fill="#008080">Luma</text>
+          <text x="250" y="150" font-family="Montserrat, sans-serif" font-size="100" fill="#4F4F4F">veris</text>
+          <circle cx="580" cy="80" r="10" fill="#4F4F4F"/>
+        </svg>
+    </a>
+
+    <!-- Navigation -->
+    <nav aria-label="Main Navigation">
+      <ul class="nav-links" id="mobile-menu" role="menu">
+        <li role="none"><a role="menuitem" href="#hero">Home</a></li>
+        <li role="none"><a role="menuitem" href="about-us.html">About</a></li>
+        <li role="none"><a role="menuitem" href="#services">Services</a></li>
+        <li role="none"><a role="menuitem" href="insights.html">Insights</a></li>
+        <li role="none"><a role="menuitem" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+  <!-- Hero Section -->
+<section class="insights-hero">
+  <div class="hero-overlay"></div>
+  <div class="container hero-content">
+    <h1>Insights</h1>
+    <p>Actionable perspectives on technology, strategy, and transformation — built to help leaders stay ahead.</p>
+    <a href="insights.html" class="hero-btn">Explore Insights</a>
+  </div>
+</section>
+
+
+  <div class="insights-filters container">
+  <button class="filter-btn active" data-filter="all">All</button>
+  <button class="filter-btn" data-filter="technology">Technology</button>
+  <button class="filter-btn" data-filter="strategy">Strategy</button>
+  <button class="filter-btn" data-filter="business">Business</button>
+  </div>
+
+
+  <section id="insights" class="insights-grid container">
+  <article class="insights-card" data-category="technology">
+    <img src="assets/images/articles/article1.jpg" alt="AI in Business">
+    <div class="insights-content">
+      <h2>AI’s Role in Business Transformation</h2>
+      <p>How artificial intelligence is reshaping industries and creating new opportunities for growth.</p>
+      <a href="articles/article1.html" class="read-more">Read More →</a>
+    </div>
+  </article>
+
+  <article class="insights-card" data-category="strategy">
+    <img src="assets/images/articles/article2.jpg" alt="Cloud Strategy">
+    <div class="insights-content">
+      <h2>Building a Winning Cloud Strategy</h2>
+      <p>Steps enterprises can take to leverage cloud for scalability, security, and innovation.</p>
+      <a href="articles/article2.html" class="read-more">Read More →</a>
+    </div>
+  </article>
+
+  <!-- Add more insights cards -->
+</section>
+
+   <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div>
+        <div class="footer-logo">Lumaveris</div>
+        <p class="footer-description">
+          Delivering data-driven consulting solutions to help your business grow and thrive in a competitive world.
+        </p>
+        <div class="footer-social">
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-section footer-links">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="insights.html">Insights</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section footer-links">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Data & Analytics</a></li>
+          <li><a href="#services">Artificial Intelligence</a></li>
+          <li><a href="#services">Web & Mobile Development</a></li>
+          <li><a href="#services">Strategy & Digital Transformation</a></li>
+          <li><a href="#services">Software Licensing & Deployment</a></li>
+          <li><a href="#services">Cloud</a></li>
+          <li><a href="#services">Messaging & Collaboration</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section footer-links">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="/insights.html">Insights</a></li>
+          <li><a href="#">Case Studies</a></li>
+          <li><a href="#">E-books</a></li>
+          <li><a href="#">Webinars</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2025 Lumaveris. All Rights Reserved.
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
