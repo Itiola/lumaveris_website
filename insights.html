@@ -53,38 +53,44 @@
 </section>
 
 
-  <div class="insights-filters container">
-  <button class="filter-btn active" data-filter="all">All</button>
-  <button class="filter-btn" data-filter="technology">Technology</button>
-  <button class="filter-btn" data-filter="strategy">Strategy</button>
-  <button class="filter-btn" data-filter="business">Business</button>
+  <div class="insights-filters container" aria-label="Filter insights by topic">
+  <button class="filter-btn active" data-filter="all" type="button" aria-pressed="true">All insights</button>
+  <button class="filter-btn" data-filter="strategy" type="button" aria-pressed="false">Strategy</button>
+  <button class="filter-btn" data-filter="transformation" type="button" aria-pressed="false">Transformation</button>
+  <button class="filter-btn" data-filter="data" type="button" aria-pressed="false">Data &amp; analytics</button>
+  <button class="filter-btn" data-filter="technology" type="button" aria-pressed="false">Technology</button>
   </div>
+  <p class="insights-filter-status container" id="insights-filter-status" aria-live="polite">Showing all insights</p>
 
 
   <section id="insights" class="insights-grid container">
-  <article class="insights-card" data-category="strategy">
+  <!-- Use space-separated slugs for every topic, e.g. data-topics="strategy data". -->
+  <article class="insights-card" data-topics="strategy transformation">
     <img src="assets/images/articles/article1.jpg" alt="Business leaders collaborating">
     <div class="insights-content">
       <h2>5 Strategies to Future-Proof Your Business</h2>
       <p>Practical steps to stay ahead in a rapidly changing landscape.</p>
+      <ul class="insight-topics" aria-label="Topics"><li>Strategy</li><li>Transformation</li></ul>
       <a href="articles/article1.html" class="read-more">Read More →</a>
     </div>
   </article>
 
-  <article class="insights-card" data-category="strategy">
+  <article class="insights-card" data-topics="strategy data">
     <img src="assets/images/insights2.jpg" alt="Data visualization and business strategy">
     <div class="insights-content">
       <h2>The Role of Data in Strategic Consulting</h2>
       <p>How analytic rigor reshapes high-stakes decisions.</p>
+      <ul class="insight-topics" aria-label="Topics"><li>Strategy</li><li>Data &amp; analytics</li></ul>
       <a href="articles/article2.html" class="read-more">Read More →</a>
     </div>
   </article>
 
-  <article class="insights-card" data-category="technology">
+  <article class="insights-card" data-topics="technology transformation">
     <img src="assets/images/home.jpg" alt="Technology governance concept">
     <div class="insights-content">
       <h2>IT Governance: A CEO's Quick Guide</h2>
       <p>Concise guidance for leaders on technology accountability and value.</p>
+      <ul class="insight-topics" aria-label="Topics"><li>Technology</li><li>Transformation</li></ul>
       <a href="articles/article3.html" class="read-more">Read More →</a>
     </div>
   </article>
