@@ -10,17 +10,16 @@
 </head>
 <body>
   <!-- Header -->
-<header>
-  <div class="container nav-bar">
-    <!-- Hamburger: extreme left -->
-    <button class="hamburger" id="hamburger" aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle navigation">
+<header class="main-header">
+  <div class="nav-bar">
+    <button class="hamburger" id="hamburger" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
       <span></span>
       <span></span>
       <span></span>
     </button>
 
     <!-- Logo (inline SVG restored) -->
-    <a href="index.html" class="logo" aria-label="Lumaveris Home">
+    <a href="../index.html" class="logo" aria-label="Lumaveris Home">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200" width="200" height="70" aria-hidden="true">
           <text x="0" y="150" font-family="Montserrat, sans-serif" font-size="100" fill="#008080">Luma</text>
           <text x="250" y="150" font-family="Montserrat, sans-serif" font-size="100" fill="#4F4F4F">veris</text>
@@ -28,18 +27,14 @@
         </svg>
     </a>
 
-    <!-- Navigation -->
-    <nav aria-label="Main Navigation">
-      <ul class="nav-links" id="mobile-menu" role="menu">
-        <li role="none"><a role="menuitem" href="#hero">Home</a></li>
-        <li role="none"><a role="menuitem" href="about-us.html">About</a></li>
-        <li role="none"><a role="menuitem" href="#services">Services</a></li>
-        <li role="none"><a role="menuitem" href="insights.html">Insights</a></li>
-        <li role="none"><a role="menuitem" href="#contact">Contact</a></li> 
-      </ul>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <ul><li><a href="../index.html#hero">Home</a></li><li><a href="../about-us.html">About</a></li><li><a href="../index.html#service-lines">Service Lines</a></li><li><a href="../index.html#service-types">Service Types</a></li><li><a href="../index.html#sectors">Sectors</a></li><li><a href="../insights.html">Insights</a></li><li><a href="../index.html#contact">Contact</a></li></ul>
     </nav>
   </div>
 </header>
+<nav class="full-screen-menu" id="navMenu" aria-label="Main navigation">
+  <ul class="nav-links"><li><a href="../index.html#hero">Home</a></li><li><a href="../about-us.html">About</a></li><li><a href="../index.html#service-lines">Service Lines</a></li><li><a href="../index.html#service-types">Service Types</a></li><li><a href="../index.html#sectors">Sectors</a></li><li><a href="../insights.html">Insights</a></li><li><a href="../index.html#contact">Contact</a></li></ul>
+</nav>
 
   <!-- Hero Section -->
  <section class="article-hero" style="background-image: url('../assets/images/articles/article1.jpg');">
@@ -116,6 +111,6 @@
   </footer>
 
   <!-- Scripts -->
-  <script src="..assets/js/script.js"></script>
+  <script src="../assets/js/navigation.js"></script>
 </body>
 </html>

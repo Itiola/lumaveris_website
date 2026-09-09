@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Insights | Lumaveris</title>
-  <link rel="stylesheet" href="assets\css\styles.css">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="./assets/css/navigation.css">
 </head>
@@ -14,7 +14,7 @@
   <!-- Header -->
 <header class="main-header">
   <div class="nav-bar">
-    <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-controls="navMenu" aria-expanded="false">
       <span></span>
       <span></span>
       <span></span>
@@ -25,13 +25,18 @@
         <text x="250" y="150" font-family="Montserrat, sans-serif" font-size="100" fill="#4F4F4F">veris</text>
       </svg>
     </a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <ul><li><a href="index.html#hero">Home</a></li><li><a href="about-us.html">About</a></li><li><a href="index.html#service-lines">Service Lines</a></li><li><a href="index.html#service-types">Service Types</a></li><li><a href="index.html#sectors">Sectors</a></li><li><a href="insights.html" aria-current="page">Insights</a></li><li><a href="index.html#contact">Contact</a></li></ul>
+    </nav>
   </div>
 </header>
 
 <nav class="full-screen-menu" id="navMenu">
   <ul class="nav-links">
     <li><a href="index.html#hero">Home</a></li> <li><a href="about-us.html">About</a></li>
-    <li><a href="index.html#services">Services</a></li>
+    <li><a href="index.html#service-lines">Service Lines</a></li>
+    <li><a href="index.html#service-types">Service Types</a></li>
+    <li><a href="index.html#sectors">Sectors</a></li>
     <li><a href="insights.html">Insights</a></li>
     <li><a href="index.html#contact">Contact</a></li>
   </ul>
@@ -132,7 +137,7 @@
   </footer>
 
   <!-- Scripts -->
-  <script src="script.js"></script>
+  <script src="assets/js/script.js"></script>
   <script src="./assets/js/navigation.js"></script>
 </body>
 </html>
