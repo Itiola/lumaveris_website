@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (path.endsWith('about-us.html')) setActive('about-us.html');
   else if (path.endsWith('insights.html')) setActive('insights.html');
   else if (path.endsWith('index.html') || path.endsWith('/')) {
-    const sections = ['hero', 'service-lines', 'service-types', 'sectors', 'insights', 'contact'].map(id => document.getElementById(id)).filter(Boolean);
+    const sections = ['hero', 'capabilities', 'services', 'sectors', 'insights', 'contact'].map(id => document.getElementById(id)).filter(Boolean);
     const observer = new IntersectionObserver(entries => {
       const visible = entries.filter(entry => entry.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
       if (visible) setActive(`index.html#${visible.target.id}`);
